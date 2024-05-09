@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#onMousePressed" onMouseReleased="#BackToMain" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #002147;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <children>
+      <Button fx:id="syllabusc1" layoutX="466.0" layoutY="169.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Syllabus" textFill="WHITE" />
+      <Button fx:id="syllabusc2" layoutX="466.0" layoutY="240.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Syllabus" textFill="WHITE" />
+      <Button fx:id="backCourses" layoutX="645.0" layoutY="661.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#BackToMain" style="-fx-background-color: #3392ff;" text="BACK" textFill="WHITE">
+         <effect>
+            <Glow level="0.49" />
+         </effect></Button>
+      <Text fill="WHITE" layoutX="168.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENT COURSES">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="40.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Button fx:id="syllabusc3" layoutX="466.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Syllabus" textFill="WHITE" />
+      <Button fx:id="syllabusc4" layoutX="466.0" layoutY="377.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Syllabus" textFill="WHITE" />
+      <Button fx:id="syllabusc5" layoutX="466.0" layoutY="451.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Syllabus" textFill="WHITE" />
+      <Button fx:id="drop1" layoutX="589.0" layoutY="169.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Drop" textFill="WHITE" />
+      <Button fx:id="drop2" layoutX="589.0" layoutY="240.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Drop" textFill="WHITE" />
+      <Button fx:id="drop3" layoutX="589.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Drop" textFill="WHITE" />
+      <Button fx:id="drop4" layoutX="589.0" layoutY="377.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Drop" textFill="WHITE" />
+      <Button fx:id="drop5" layoutX="589.0" layoutY="451.0" mnemonicParsing="false" style="-fx-background-color: #3392ff;" text="Drop" textFill="WHITE" />
+      <TextField fx:id="course1" editable="false" layoutX="63.0" layoutY="169.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="course2" editable="false" layoutX="63.0" layoutY="240.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="course3" editable="false" layoutX="63.0" layoutY="306.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="course4" editable="false" layoutX="63.0" layoutY="377.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="course5" editable="false" layoutX="63.0" layoutY="451.0" prefHeight="25.0" prefWidth="323.0" />
+   </children>
+</Pane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #002147;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <children>
+      <TextField fx:id="student_name_surname" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="454.0" style="-fx-border-radius: 15; -fx-background-radius: 20; -fx-background-color: WHite; -fx-border-color: #696969; -fx-border-width: 4;" />
+      <Button fx:id="student_logout" layoutX="587.0" layoutY="14.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#LogOut" prefHeight="40.0" prefWidth="99.0" style="-fx-background-radius: 15; -fx-background-color: #3392FF;" text="Log Out" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="student_course" layoutX="133.0" layoutY="286.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#Course" prefHeight="110.0" prefWidth="435.0" style="-fx-background-radius: 15; -fx-background-color: #3392FF;" text="      Course" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="81.0" fitWidth="81.0" layoutX="142.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@courses2.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="student_interimgrades" layoutX="133.0" layoutY="419.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#InterimGrades" prefHeight="110.0" prefWidth="435.0" style="-fx-background-radius: 15; -fx-background-color: #3392FF;" text="        Interim Grades" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="81.0" fitWidth="81.0" layoutX="142.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grades.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="student_transcript" layoutX="133.0" layoutY="559.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#Transcript" prefHeight="110.0" prefWidth="435.0" style="-fx-background-radius: 15; -fx-background-color: #3392FF;" text="       Transcript" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="81.0" fitWidth="81.0" layoutX="142.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@display%20student.png" />
+         </image>
+      </ImageView>
+      <Button id="student_personalinfo" fx:id="student_personalinfo" layoutX="133.0" layoutY="150.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#PersonalInfo" prefHeight="110.0" prefWidth="435.0" style="-fx-background-radius: 15; -fx-background-color: #3392FF;" text="             Personal Information" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="81.0" fitWidth="96.0" layoutX="142.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@courses.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

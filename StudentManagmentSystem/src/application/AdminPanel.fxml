@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #002147;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Button fx:id="admin_logout" layoutX="592.0" layoutY="14.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#LogOut" prefHeight="48.0" prefWidth="94.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Log-Out" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="admin_name_surname" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="454.0" style="-fx-background-color: White; -fx-border-color: #696969; -fx-border-width: 4; -fx-background-radius: 20; -fx-border-radius: 15;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Button fx:id="admin_displaystudents" layoutX="181.0" layoutY="122.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#DisplayStudents" prefHeight="87.0" prefWidth="380.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Display Students" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="admin_addstudents" layoutX="181.0" layoutY="232.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#AddStudent" prefHeight="87.0" prefWidth="380.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Add Student" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="88.0" layoutX="181.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@add%20students.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin_modifystudents" layoutX="181.0" layoutY="350.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#ModifyStudent" prefHeight="87.0" prefWidth="380.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Modify Student" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="188.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit%20student.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin_removestudents" layoutX="181.0" layoutY="464.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#RemoveStudent" prefHeight="87.0" prefWidth="380.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Remove Student" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="181.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@delete%20student.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin_coursebook" layoutX="181.0" layoutY="582.0" mnemonicParsing="false" onMousePressed="#onMousePressed" onMouseReleased="#Coursebook" prefHeight="87.0" prefWidth="380.0" style="-fx-background-color: #3392FF; -fx-background-radius: 15;" text="Coursebook" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="181.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@courses.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="181.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@display%20student.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
